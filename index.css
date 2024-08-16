@@ -1,5 +1,5 @@
 *{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 
@@ -213,14 +213,13 @@ ul.mucLuc>li>a:hover{
 
 .hangquyTrinh{
    display: flex;
-   width: 90%;
+   width: 80%;
    margin: 0 auto;
 }
 .quyTrinh{
     background-color: white;
-    width: 30%;
-    height: 200px;
-    margin: 1rem;
+    width: 25%;
+    margin: 2rem auto;
     /* display: inline-block; */
     border-radius: 10px;
 }
@@ -233,20 +232,26 @@ ul.mucLuc>li>a:hover{
     font-size: 42px;
     font-weight: bold;
     text-align: center;
+    color: #31294C;
+    
 }
 
 .noiDungQuyTrinh{
     padding: 1rem;
-    padding-top: 0rem;
+    padding-top: 0;
 }
 
 .tenBuoc{
     text-align: center;
     padding: 1rem;
     padding-top: 0;
+    color: #5756BB;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .noiDungBuoc{
     text-align: justify;
-    height: 150px;
+    padding: 1rem;
+    padding-top: 0;
 }

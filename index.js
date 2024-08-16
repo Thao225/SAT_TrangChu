@@ -1,3 +1,18 @@
+window.onload=function(){4
+
+
+  wow = new WOW(
+    {
+    boxClass:     'wow',      // default
+    animateClass: 'animate_animated', // default
+    offset:       0,          // default
+    mobile:       true,       // default
+    live:         true        // default
+  }
+  )
+  wow.init();
+
+
 // video
 var video = document.querySelector("video"),
 container = document.querySelector("#container");
@@ -29,3 +44,4 @@ window.addEventListener("resize", setVideoDimensions, false);
 
 
 //
+}
