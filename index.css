@@ -35,11 +35,11 @@ video {
 
 #container {
     height: 710px;
-    width: 1380.36px;
+    width: 1380px;
     overflow: hidden;
     position: relative;
     margin-left: -0.5rem; padding-left: 0;
-    left: 0; right: 0;
+    /* left: 0; right: 0; */
 
 }
 
@@ -183,8 +183,10 @@ ul.mucLuc>li>a:hover{
     margin-top: rem;
 } */
 
-.quyTrinhNopHoSo{
+.noiDungs{
     width: 96%;
+    padding-top: 2rem;
+    margin: 2rem auto;
 }
 
 .tieuDeLon{
@@ -214,14 +216,15 @@ ul.mucLuc>li>a:hover{
 .hangquyTrinh{
    display: flex;
    width: 80%;
-   margin: 0 auto;
+   margin: 0.5rem auto;
 }
 .quyTrinh{
     background-color: white;
-    width: 25%;
-    margin: 2rem auto;
+    width: 30%;
+    margin: 1rem auto;
     /* display: inline-block; */
     border-radius: 10px;
+    height: 300px;
 }
 /* .quyTrinh:first-child{
     
@@ -254,4 +257,85 @@ ul.mucLuc>li>a:hover{
     text-align: justify;
     padding: 1rem;
     padding-top: 0;
+}
+
+/* Các bước đăng kí xét tuyển đại học  */
+.dangKiXetTuyenDaiHoc{
+    background-color: white;
+    width: 101%;
+    margin-left: -0.4rem; padding-left: 0;
+    margin-top: 5rem;
+}
+.dangKiXetTuyenDaiHoc>.tieuDeLon{
+    color: #Da18DD;
+    padding-top: 2rem;
+}
+
+.dangKiXetTuyenDaiHoc>.tieuDeLon{
+    color: #Da18DD;
+    padding-top: 2rem;
+}
+
+.cacBuocDangKis{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+.dangKi{
+    width: 50%;
+}
+
+
+.buocDangKis{
+    list-style-type: none;
+    border-left: 5px solid #31294C;
+    flex: 1;
+}
+
+.buocDangKis>li{
+    text-transform: uppercase;
+    margin: 2rem;
+    margin-left: 1.5rem;
+    font-weight:bold;
+}
+
+.noiDungBuocDKs:nth-child(1){
+    position: relative;
+    display: block;
+}
+
+.noiDungBuocDKs{
+    display:none;
+    position:absolute;
+    width: 100%;
+    margin:  2rem;
+    text-align: center;
+    margin-top: 1rem;
+    top: 0;
+    left: 0;
+}
+
+
+.noiDungBuocDKs>img{
+    width: 50%;
+}
+
+.tieuDeBuoc{
+    text-transform: uppercase;
+    color: #31294C;
+    font-weight: bold;
+    font-size: 23px;
+    padding: 1rem;
+}
+
+.noiDungBuocDK{
+    padding: 1rem;
+    width: 85%;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+.noiDungBuocDK span, .noiDungBuocDK a{
+    color: #5756BB;
+    font-weight: bold;
 }
