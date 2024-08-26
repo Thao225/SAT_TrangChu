@@ -37,7 +37,7 @@ function lapLai(){
 }
 
 let count = 0;
-let timerId = setInterval(lapLai, 2000);
+let timerId = setInterval(lapLai, 3000);
 
 for (let i = 0; i < chons.length; i++){
   chons[i].onclick=function() {
