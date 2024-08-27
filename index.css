@@ -40,7 +40,7 @@ video {
     width: 100%;
     overflow: hidden;
     position: relative;
-    margin-left: -0rem; padding-left: 0;
+    margin-left: 0; padding-left: 0;
     /* left: 0; right: 0; */
 
 }
