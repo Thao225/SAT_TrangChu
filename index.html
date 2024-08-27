@@ -2,17 +2,21 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>Trang chủ</title>
     <link rel="stylesheet" href="index.css">
-    <!-- <script src="index.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" /> -->
+    <script src="index.js"></script>
 </head>
 <body>
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
     <!--Thanh menu- -->
     <header id="home">
         <div class="mucLucs">
             <div class="logoTruongs">
-                <img src="./img/logoTruong.png" alt="Logo" id="logoTruong">
+                <img src="./img/logo/logoTruong.png" alt="Logo" id="logoTruong">
             </div>
             <nav class="mucLucs">
                 <ul class="mucLucs">
@@ -66,78 +70,216 @@
             <source src="./video/Nen.mp4" type="video/mp4" />
         </video>
     </div>
-    
+
+    <!-- Nội dung -->
    <main>
-    <section class="quyTrinhnopHoSo">
-        <h1 class="tieuDeLon">Quy trình nộp hồ sơ trực tuyến </h1>
-        <h1 class="gachChan"></h1>
-        <div class="quyTrinhs">
-            <div class="hangquyTrinh">
-                    <div class="quyTrinh">
-                        <div class="tieuDeCuaQuyTrinh"> 01 </div>
-                        <div class="noiDungQuyTrinh">
-                            <div class="tenBuoc">Đăng ký xét tuyển</div>
-                            <div class="noiDungBuoc">
-                                Truy cập .. để đăng kí.
-                                Xem hướng dẫn tại..... trước khi đăng kí.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="quyTrinh">
-                        <div class="tieuDeCuaQuyTrinh"> 02 </div>
-                        <div class="noiDungQuyTrinh">
-                            <div class="tenBuoc">Đăng ký thông tin thí sinh</div>
-                            <div class="noiDungBuoc">
-                                Thí sinh thực hiện khai báo hồ sơ xét tuyển theo các phương thức xét tuyển có sẵn.
-                                Lưu ý thông tin nhập vào cần chính xác.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="quyTrinh">
-                        <div class="tieuDeCuaQuyTrinh"> 03 </div>
-                        <div class="noiDungQuyTrinh">
-                            <div class="tenBuoc"> Chọn phương thức xét tuyển</div>
-                            <div class="noiDungBuoc"> 
-                                Thí sinh chọn phương pháp xét tuyển và điền thông tin yêu cầu.
-                                Truy cập ... để biết thêm thông tin về các phương pháp xét tuyển
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+    <!-- Quy trình nộp hồ sơ trực tuyến -->
+        <section class="noiDungs quyTrinhNopHoSo">
+            <h1 class="tieuDeLon">Quy trình nộp hồ sơ trực tuyến </h1>
+            <h1 class="gachChan"></h1>
+            <div class="quyTrinhs">
                 <div class="hangquyTrinh">
-                <div class="quyTrinh">
-                    <div class="tieuDeCuaQuyTrinh"> 04 </div>
-                    <div class="noiDungQuyTrinh">
-                        <div class="tenBuoc"> Đăng ký nguyện vọng </div>
-                        <div class="noiDungBuoc">
-                            Thí sinh thực hiện đăng ký nguyện vọng xét tuyển trên hệ thống.
-                            Mỗi thí sinh được đăng ký tối thiệu 1 nguyện vọng.
+                        <div class="quyTrinh">
+                            <div class="tieuDeCuaQuyTrinh"> 01 </div>
+                            <div class="noiDungQuyTrinh">
+                                <div class="tenBuoc">Đăng ký xét tuyển</div>
+                                <div class="noiDungBuoc">
+                                    Truy cập .. để đăng kí.
+                                    Xem hướng dẫn tại..... trước khi đăng kí.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quyTrinh">
+                            <div class="tieuDeCuaQuyTrinh"> 02 </div>
+                            <div class="noiDungQuyTrinh">
+                                <div class="tenBuoc">Đăng ký thông tin thí sinh</div>
+                                <div class="noiDungBuoc">
+                                    Thí sinh thực hiện khai báo hồ sơ xét tuyển theo các phương thức xét tuyển có sẵn.
+                                    Lưu ý thông tin nhập vào cần chính xác.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quyTrinh">
+                            <div class="tieuDeCuaQuyTrinh"> 03 </div>
+                            <div class="noiDungQuyTrinh">
+                                <div class="tenBuoc"> Chọn phương thức xét tuyển</div>
+                                <div class="noiDungBuoc"> 
+                                    Thí sinh chọn phương pháp xét tuyển và điền thông tin yêu cầu.
+                                    Truy cập ... để biết thêm thông tin về các phương pháp xét tuyển
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="quyTrinh">
-                    <div class="tieuDeCuaQuyTrinh"> 05 </div>
-                    <div class="noiDungQuyTrinh">
-                        <div class="tenBuoc"> Kiểm tra thông tin hồ sơ</div>
-                        <div class="noiDungBuoc">
-                            Thí sinh kiểm tra thông tin hồ sơ sau khi đăng ký hoàn tất. 
-                            Hồ sơ sẽ gửi về email thí sinh đã đã đăng ký.
+                    <div class="hangquyTrinh">
+                    <div class="quyTrinh">
+                        <div class="tieuDeCuaQuyTrinh"> 04 </div>
+                        <div class="noiDungQuyTrinh">
+                            <div class="tenBuoc"> Đăng ký nguyện vọng </div>
+                            <div class="noiDungBuoc">
+                                Thí sinh thực hiện đăng ký nguyện vọng xét tuyển trên hệ thống.
+                                Mỗi thí sinh được đăng ký tối thiệu 1 nguyện vọng.
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="quyTrinh">
-                    <div class="tieuDeCuaQuyTrinh"> 06 </div>
-                    <div class="noiDungQuyTrinh">
-                        <div class="tenBuoc">Tra cứu kết quả xét tuyển</div>
-                        <div class="noiDungBuoc">
-                            Thí sinh chờ ngày thông báo tra cứu kết quả xét tuyển.
-                            Nhà trường sẽ thông báo link tra cứu qua trang tuyển sinh.
+                    <div class="quyTrinh">
+                        <div class="tieuDeCuaQuyTrinh"> 05 </div>
+                        <div class="noiDungQuyTrinh">
+                            <div class="tenBuoc"> Kiểm tra thông tin hồ sơ</div>
+                            <div class="noiDungBuoc">
+                                Thí sinh kiểm tra thông tin hồ sơ sau khi đăng ký hoàn tất. 
+                                Hồ sơ sẽ gửi về email thí sinh đã đã đăng ký.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quyTrinh">
+                        <div class="tieuDeCuaQuyTrinh"> 06 </div>
+                        <div class="noiDungQuyTrinh">
+                            <div class="tenBuoc">Tra cứu kết quả xét tuyển</div>
+                            <div class="noiDungBuoc">
+                                Thí sinh chờ ngày thông báo tra cứu kết quả xét tuyển.
+                                Nhà trường sẽ thông báo link tra cứu qua trang tuyển sinh.
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    
+        <!-- Các bước đăng kí xét tuyển đại học -->
+         <section class="dangKiXetTuyenDaiHoc">
+            <h1 class="tieuDeLon">Các bước đăng kí xét tuyển đại học </h1>
+            <h1 class="gachChan"></h1>
+            <div class="cacBuocDangKis ">
+                <div class="dangKi">
+                    <ul class="buocDangKis">
+                        <li>Bước 1 : Đăng nhập</li>
+                        <li>Bước 2 : Kê khai thông tin</li>
+                        <li>Bước 3 : Chọn nguyên vọng đủ điều kiện trúng tuyển (Nếu có )</li>
+                        <li>Bước 4 : Thêm nguyện vọng</li>
+                        <li>Bước 5 : Nhập OTP</li>
+                        <li>Bước 6 : Thay đổi nguyện vọng (nếu cần)</li>
+                        <li>Bước 7 : Kiểm tra thông tin đăng ký</li>
+                        <li>Bước 8 : Thanh Toán Lệ Phí</li>
+                        <li>Chờ đợi kết quả</li>
+                    </ul>
+                </div>
+                <!-- <div class="giua">
+                    <i class="fa-solid fa-rocket-launch" style="color: #1c7ed6;"></i>
+                </div> -->
+                <div class="dangKi">
+                    <div class="noiDungBuocs">
+                        <div class="noiDungBuocDKs">
+                            <img src="./img/Cac_Buoc_Dang_Ki/theThan.png" alt="Ảnh">
+                            <div class="tieuDeBuoc">Chúc các thí sinh đăng kí thành công</div>
+                            <div class="noiDungBuocDK">Lưu ý: Để việc đăng ký đăng ký nguyện vọng xét tuyển thành công, thí sinh phải thực hiện đăng ký đầy đủ các bước, không được bỏ qua hoặc dừng lại khi chưa thực hiện xong bước cuối cùng.</div>
+                            <!-- <div class="noiDungBuocDK">Thí sinh đăng nhập hệ thống bằng tài khoản đã được cấp. 
+                                <div> Link: <a href="https://thisinh.thitotnghiepthpt.edu.vn/Account/Login?ReturnUrl=%2f">http://thisinh.thitotnghiepthpt.edu.vn/</a>
+                            </div> -->
+                            <div>WELCOME</div>
+                        </div>
+                        <div class="noiDungBuocDKs">
+                            <img src="./img/Cac_Buoc_Dang_Ki/Buoc_1.png" alt="Bước 1">
+                            <div class="tieuDeBuoc">Đăng nhập</div>
+                            <div class="noiDungBuocDK">Thí sinh đăng nhập hệ thống bằng tài khoản đã được cấp. 
+                                <div> Link: <a href="https://thisinh.thitotnghiepthpt.edu.vn/Account/Login?ReturnUrl=%2f">http://thisinh.thitotnghiepthpt.edu.vn/</a>
+                            </div>
+                        </div>
+                        <div class="noiDungBuocDKs">
+                            <img src="./img/Cac_Buoc_Dang_Ki/Buoc_2.png" alt="Bước 2">
+                            <div class="tieuDeBuoc">Kê khai thông tin</div>
+                            <div class="noiDungBuocDK">Chọn "Đăng ký thông tin xét tuyển sinh" ở góc trái màn hình để bắt đầu thực hiện đăng ký.
+                                Sau khi hoàn tất việc nhập các thông tin, thí sinh chọn ô <span>"Lưu thông tin đăng ký xét tuyển sinh"</span>.</div>
+                        </div>
+                        <div class="noiDungBuocDKs">
+                            <img src="./img/Cac_Buoc_Dang_Ki/Buoc_3.png" alt="Bước 3">
+                            <div class="tieuDeBuoc">Chọn nguyên vọng đủ điều kiện trúng tuyển</div>
+                            <div class="noiDungBuocDK">Vào phần <span>"Đăng ký xét tuyển sinh"</span>. Truy cập <span>"Danh sách nguyện vọng đủ điều kiện trúng tuyển"</span>. Sau đó click <span>Tiếp theo</span></div>   
+                        </div>
+                        <div class="noiDungBuocDKs">
+                            <img src="./img/Cac_Buoc_Dang_Ki/Buoc_4.png" alt="Bước 4">
+                            <div class="tieuDeBuoc">Thêm nguyện vọng</div>
+                            <div class="noiDungBuocDK">Nhấn nút <span>“Thêm nguyện vọng”</span>. Sau khi nhập đầy đủ thông tin, thí sinh bấm nút <span>“Chọn”</span> để lưu thông tin. Sau đó click <span>Tiếp theo</span></div>
+                        </div>
+                        <div class="noiDungBuocDKs">
+                            <img src="./img/Cac_Buoc_Dang_Ki/Buoc_5.png" alt="Bước 5">
+                            <div class="tieuDeBuoc">Nhập OTP</div>
+                            <div class="noiDungBuocDK">Thí sinh sử dụng số điện thoại trong phiếu đăng ký và gửi tin nhắn theo cú pháp <span>TSO số CMND/CCCD</span> gửi <span>6058</span> để lấy mã xác thực. Thí sinh nhập mã xác thực vào ô <span>“Nhập mã xác thực”</span> và bấm <span>“Xác nhận đăng ký”</span> để hoàn thành quá trình đăng ký.</div>
+                        </div>
+                        <div class="noiDungBuocDKs">
+                            <img src="./img/Cac_Buoc_Dang_Ki/Buoc_6.png" alt="Bước 6">
+                            <div class="tieuDeBuoc">Thay đổi nguyện vọng (nếu cần)</div>
+                            <div class="noiDungBuocDK">Thí sinh có thể thực hiện: Sắp xếp lại thứ tự nguyện vọng hoặc Xóa, Sửa, Thêm mới nguyện vọng. Lưu ý: <span>Sau khi thay đổi nguyện vọng phải nhập lại mã OTP</span></div>
+                        </div>
+                        <div class="noiDungBuocDKs">
+                            <img src="./img/Cac_Buoc_Dang_Ki/Buoc_7.png" alt="Bước 7">
+                            <div class="tieuDeBuoc">Kiểm tra thông tin đăng ký</div>
+                            <div class="noiDungBuocDK">Sau khi thí sinh đã đăng ký/ điều chỉnh nguyện vọng xét tuyển thành công, thoát khỏi chức năng đăng ký nguyện vọng xét tuyển và Hệ thống. Sau đó thí sinh đăng nhập lại Hệ thống và vào <span>“Đăng ký nguyện vọng trực tuyến”</span>. Vào trang thông tin nguyện vọng, thí sinh thực hiện click <span>In danh sách</span> nguyện vọng sau khi điều chỉnh và lưu lại.</div>
+                        </div>
+                        <div class="noiDungBuocDKs">
+                            <img src="./img/Cac_Buoc_Dang_Ki/Buoc_8.png" alt="Bước 8">
+                            <div class="tieuDeBuoc">Thanh toán lệ phí</div>
+                            <div class="noiDungBuocDK">Trong khoảng thời gian quy định thí sinh phải nộp lệ phí để hoàn tất việc đăng ký xét tuyển trên hệ thống của Bộ GD&ĐT. Nhấn nút <span>“Thanh toán”</span> để hoàn tất việc đăng ký nguyện vọng. Mỗi nguyện vọng đăng ký phải thanh toán số tiền là <span>20.000 đồng/ nguyện vọng</span>.</div>
+                        </div>
+                        <div class="noiDungBuocDKs">
+                            <img src="./img/Cac_Buoc_Dang_Ki/Chuc_Mung.png" alt="Ảnh">
+                            <div class="tieuDeBuoc">Chúc các thí sinh đăng kí thành công</div>
+                            <div class="noiDungBuocDK">Lưu ý: Để việc đăng ký đăng ký nguyện vọng xét tuyển thành công, thí sinh phải thực hiện đăng ký đầy đủ các bước, không được bỏ qua hoặc dừng lại khi chưa thực hiện xong bước cuối cùng.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+         <section>
+            <div class="soDoKhoa">
+            </div>
+         </section>
+
+    <!-- Quy chế - Quy định tuyển sinh -->
+        <!-- <section class="noiDungs">
+            <h1 class="tieuDeLon">Quy trình nộp hồ sơ trực tuyến </h1>
+            <h1 class="gachChan"></h1>
+            <div class="quyChes">
+                <div class="quyChe">
+                    <div class="tieuDeQuyChe"> Quy chế 1</div>
+                    <div class="noiDungQuyChe">
+
+                    </div>
+                </div>
+            </div>
+        </section> -->
    </main>
+
 </body>
 </html>
+
+
+<!-- <div class="haha">
+    <div class="night">
+     <div class="hehe">
+         <div class="truoc"></div>
+         <div class="shooting_star"></div>
+         <div class="sau"></div>
+     </div>
+     <div class="hehe">
+         <div class="truoc"></div>
+         <div class="shooting_star"></div>
+         <div class="sau"></div>
+     </div>
+     <div class="hehe">
+         <div class="truoc"></div>
+         <div class="shooting_star"></div>
+         <div class="sau"></div>
+     </div>
+     <div class="hehe">
+         <div class="truoc"></div>
+         <div class="shooting_star"></div>
+         <div class="sau"></div>
+     </div>
+     <div class="hehe">
+         <div class="truoc"></div>
+         <div class="shooting_star"></div>
+         <div class="sau"></div>
+     </div>
+    </div>
+ </div> -->
