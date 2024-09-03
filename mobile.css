@@ -104,8 +104,11 @@
     }
 }
 
-@media screen and (max-width: 412px){
+@media screen and (max-width: 430px){
     /* .cardQuyChe{
         width: calc(50vw-20px);
     } */
+    #container{
+        height: 200px;
+    }
 }

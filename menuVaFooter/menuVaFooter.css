@@ -305,6 +305,9 @@ footer a{
     nav.mucLucs>ul{
         width: 100%;
     }
+    div.logoTruongs{
+        padding-left: 1rem;
+    }
 }
 
 
