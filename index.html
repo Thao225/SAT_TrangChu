@@ -2,23 +2,26 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang chủ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="./menuVaFooter/menuVaFooter.css">
+    <script src="./menuVaFooter/menuVaFooter.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" /> -->
     <script src="index.js"></script>
 </head>
 <body>
-    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
     <!--Thanh menu- -->
-    <header id="home">
+    <header id="menu">
         <div class="mucLucs">
             <div class="logoTruongs">
-                <img src="./img/logo/logoTruong.png" alt="Logo" id="logoTruong">
+                <a href="https://thao225.github.io/SAT_TrangChu/"><img src="./img/logo/logoTruong.png" alt="Logo" id="logoTruong"></a>
             </div>
-            <nav class="mucLucs">
+            <div id="menuRutGon"><i class="fa-solid fa-bars"></i></div>
+            <nav class="mucLucs" id="menuMobile">
                 <ul class="mucLucs">
                     <li><a href="#home">Trang chủ</a>
                         <!-- <div id="after"></div> -->
@@ -59,6 +62,7 @@
                         </ul>
                     </li>
                     <li><a href="#">Liên hệ</a></li>
+                    <li id="closeMenu">Thoát</li>
                 </ul>
             </nav>
         </div>
@@ -146,7 +150,86 @@
             </div>
         </section>
     
-        <!-- Các bước đăng kí xét tuyển đại học -->
+ <!-- Quy chế - Quy định tuyển sinh -->
+ <section class="noiDungs toanuyChes">
+    <h1 class="tieuDeLon">Quy chế và quy định tuyển sinh </h1>
+    <h1 class="gachChan"></h1>
+    <div id="quyChes">
+        <div id="quyChe">
+            <div class="cardQuyChe">
+                <div>
+                    <img src="./img/logo/logoUToi.png" alt="logoSat">
+                    <div class="noiDungQuyChe">
+                        Xét tuyển theo ngành và theo tổ hợp môn thi xét tuyển.
+                    </div>
+                </div>
+            </div>
+            <div class="cardQuyChe">
+                <div>
+                    <img src="./img/logo/logoUToi.png" alt="logoSat">
+                    <div class="noiDungQuyChe">
+                        Điểm trúng tuyển của các tổ hợp môn thi trong cùng một ngành là bằng nhau.
+                    </div>    
+                </div>
+            </div>
+            <div class="cardQuyChe">
+                <div>
+                    <img src="./img/logo/logoUToi.png" alt="logoSat">
+                    <div class="noiDungQuyChe">
+                        Xét trúng tuyển từ thí sinh có kết quả cao xuống và đảm bảo chất lượng tuyển sinh.
+                    </div>    
+                </div>
+            </div>
+            <div class="cardQuyChe">
+                <div>
+                    <img src="./img/logo/logoUToi.png" alt="logoSat">
+                    <div class="noiDungQuyChe">
+                        Điểm trúng tuyển được tính theo thang điểm 10, tổng điểm tối đa của 3 bài thi trong tổ hợp xét tuyển là 30 điểm.
+                    </div>    
+                </div>
+            </div>
+            <div class="cardQuyChe">
+                <div>
+                    <img src="./img/logo/logoUToi.png" alt="logoSat">
+                    <div class="noiDungQuyChe">
+                        Xét tuyển các nguyện vọng bình đẳng theo kết quả thi (điểm trúng tuyển giữa các nguyện vọng là bằng nhau), nếu thí sinh không trúng tuyển nguyện vọng ở thứ tự ưu tiên thứ nhất (nguyện vọng 1) thì sẽ được tự động xét tuyển ở nguyện vọng ưu tiên thứ hai (nguyện vọng 2) và kế tiếp.
+                    </div>
+                </div>
+            </div>
+            <div class="cardQuyChe">
+                <div>
+                    <img src="./img/logo/logoUToi.png" alt="logoSat">
+                    <div class="noiDungQuyChe">
+                        Thí sinh chỉ trúng tuyển vào 1 nguyện vọng ưu tiên cao nhất trong danh sách các nguyện vọng đã đăng ký, khi đã trúng tuyển ở nguyện vọng nào thì không được xét tuyển tiếp ở nguyện vọng sau.
+                    </div>  
+                </div>
+            </div>
+            <div class="cardQuyChe">
+                <div>
+                    <img src="./img/logo/logoUToi.png" alt="logoSat">
+                    <div class="noiDungQuyChe">
+                        Đối với các thí sinh bằng điểm xét tuyển ở cuối danh sách, nếu vẫn còn vượt chỉ tiêu thì ưu tiên thí sinh có nguyện vọng cao hơn theo Quy chế tuyển sinh của Bộ Giáo dục và Đào tạo, Học viện không sử dụng tiêu chí phụ riêng để xét tuyển.
+                    </div>    
+                </div> 
+            </div>
+            <div class="cardQuyChe">
+                <div>
+                    <img src="./img/logo/logoUToi.png" alt="logoSat">
+                    <div class="noiDungQuyChe">
+                        Các điều kiện khác thực hiện theo Quy chế tuyển sinh đại học hệ chính quy hiện hành của Bộ Giáo dục và Đào tạo.
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="chuyenCard">
+        <button id="muiChuyenTrai"><i class="fa-solid fa-arrow-left"></i></button>
+        <button id="muiChuyenPhai"><i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+
+</section>
+
+<!-- Các bước đăng kí xét tuyển đại học -->
          <section class="dangKiXetTuyenDaiHoc">
             <h1 class="tieuDeLon">Các bước đăng kí xét tuyển đại học </h1>
             <h1 class="gachChan"></h1>
@@ -176,7 +259,7 @@
                             <!-- <div class="noiDungBuocDK">Thí sinh đăng nhập hệ thống bằng tài khoản đã được cấp. 
                                 <div> Link: <a href="https://thisinh.thitotnghiepthpt.edu.vn/Account/Login?ReturnUrl=%2f">http://thisinh.thitotnghiepthpt.edu.vn/</a>
                             </div> -->
-                            <div>WELCOME</div>
+                            <!-- <div>WELCOME</div> -->
                         </div>
                         <div class="noiDungBuocDKs">
                             <img src="./img/Cac_Buoc_Dang_Ki/Buoc_1.png" alt="Bước 1">
@@ -230,56 +313,538 @@
                 </div>
             </div>
          </section>
-         <section>
-            <div class="soDoKhoa">
-            </div>
-         </section>
 
-    <!-- Quy chế - Quy định tuyển sinh -->
-        <!-- <section class="noiDungs">
-            <h1 class="tieuDeLon">Quy trình nộp hồ sơ trực tuyến </h1>
+
+<!-- Giới thiệu khoa -->
+         <section class="gThieuKhoa">
+            <h1 class="tieuDeLon">Giới thiệu Khoa </h1>
             <h1 class="gachChan"></h1>
-            <div class="quyChes">
-                <div class="quyChe">
-                    <div class="tieuDeQuyChe"> Quy chế 1</div>
-                    <div class="noiDungQuyChe">
-
+            <div class="gtKhoas">
+                <div class="gtKhoa" id="gioiThieuKhoa">
+                <!-- <div class="gioiThieuKhoas coSo0"></div> -->
+                    <div class="gioiThieuKhoas coSo1">
+                        <div class="soDoKhoas">
+                            <h1 class="tenCoSo"> CƠ SỞ 1</h1>
+                            <div class="soDoKhoa">
+                            <div class="khoas khoaKT&QLKG">
+                                <a href=""></a>
+                                <img src="./img/Avarta Khoa/5_KinhTeVaQuanLyKhongGian.png" alt="5_KinhTeVaQuanLyKhongGian" class="avartaKhoa" />
+                                <div class="tenKhoa">
+                                    <span class="shortName">KT&QLKG</span>
+                                    <span class="longName">Kinh Tế Và Quản Lý Không Gian</span>
+                                </div>  
+                            </div> 
+                            <div class="khoas khoaHTNL">
+                                <a href=""></a>
+                                <img src="./img/Avarta Khoa/8_HeThongNangLuong.png" alt="8_HeThongNangLuong" class="avartaKhoa" />
+                                <div class="tenKhoa"> 
+                                    <span class="shortName">HTNL</span>
+                                    <span class="longName">Hệ Thống Năng Lượng</span>
+                                </div>
+                            </div>
+                            <div class="khoas khoaYHoc">
+                                <a href=""></a>
+                                <img src="./img/Avarta Khoa/9_YHoc.png" alt="9_YHoc" class="avartaKhoa" />
+                                <div class="tenKhoa">
+                                    <span class="shortName">Y Học</span>
+                                    <span class="longName">Y Học</span>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- <div class="ghiChuKhoa">
+                            <img src="./img/hinhCoSo/coSo1.png" alt="coSo1"/>
+                        </div> -->
+                    </div>
+                    
+                    <div class="gioiThieuKhoas coSo2">
+                        <div class="soDoKhoas">
+                            <h1 class="tenCoSo"> CƠ SỞ 2</h1>
+                            <div class="soDoKhoa">
+                            <div class="khoas khoaKTHKVT">
+                                <a href=""></a>
+                                <img src="./img/Avarta Khoa/2_KyThuatHangKhongVuTru.png" alt="2_KyThuatHangKhongVuTru" class="avartaKhoa" />
+                                <div class="tenKhoa">
+                                    <span class="shortName">KTHKVT</span>
+                                    <span class="longName">Kỹ Thuật Hàng Không Vũ Trụ</span>
+                                </div>
+                            </div>
+                            <div class="khoas khoaTTNT">
+                                <a href=""></a>
+                                <img src="./img/Avarta Khoa/4_TriTueNhanTao.png" alt="4_TriTueNhanTao" class="avartaKhoa" />
+                                <div class="tenKhoa">
+                                    <span class="shortName">TTNT</span>
+                                    <span class="longName">Trí Tuệ Nhân Tạo</span>
+                                </div> 
+                            </div>
+                            <div class="khoas khoaTTA">
+                                <a href=""></a>
+                                <img src="./img/Avarta Khoa/7_ThucTeAo.png" alt="7_ThucTeAo" class="avartaKhoa" />
+                                <div class="tenKhoa">
+                                    <span class="shortName">TTA</span>
+                                    <span class="longName">Thực Tế Ảo</span>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- <div class="ghiChuKhoa">
+                            <img src="./img/hinhCoSo/coSo2.png" alt="coSo2"/>
+                        </div> -->
+                    </div>
+                    <div class="gioiThieuKhoas coSo3">
+                        <div class="soDoKhoas">
+                            <h1 class="tenCoSo"> CƠ SỞ 3</h1>
+                            <div class="soDoKhoa">
+                                <div class="khoas khoaKHVT">
+                                    <a href=""></a>
+                                    <img class="avartaKhoa" src="./img/Avarta Khoa/1_KhoaHocVuTru.png" alt="1_KhoaHocVuTru"/>
+                                    <div class="tenKhoa">
+                                        <span class="shortName">KHVT</span>
+                                        <span class="longName">Khoa Học Vũ Trụ</span>
+                                    </div>
+                                </div> 
+                                <div class="khoas khoaCNTT">
+                                    <a href=""></a>
+                                    <img src="./img/Avarta Khoa/3_CongNgheThongTin.png" alt="3_CongNgheThongTin" class="avartaKhoa" />
+                                    <div class="tenKhoa">
+                                        <span class="shortName">CNTT</span>
+                                        <span class="longName">Công Nghệ Thông Tin</span>
+                                    </div>
+                                </div>
+                                <div class="khoas khoaDLVT">
+                                    <a href="#">
+                                    <img src="./img/Avarta Khoa/6_DuLieuVuTru.png" alt="6_DuLieuVuTru" class="avartaKhoa"/>
+                                    <div class="tenKhoa">
+                                        <span class="shortName">DLVT</span>
+                                        <span class="longName">Dữ Liệu Vũ Trụ</span>
+                                    </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="ghiChuKhoa">
+                            <img src="./img/hinhCoSo/coSo3.png" alt="coSo3"/>
+                        </div> -->
                     </div>
                 </div>
             </div>
-        </section> -->
+            <div class="chuyenTrangs">
+                <div class="nutChuyens">
+                    <div class="nutChuyen"></div>
+                    <div class="nutChuyen"></div>
+                    <div class="nutChuyen"> </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Kham pha truong -->
+        <section class="khamphaTruongs"> 
+            <h1 class="tieuDeLon">Khám phá Trường </h1>
+            <h1 class="gachChan"></h1>
+            <div class="khamphaTruong">
+                <div class="chuyenKPTTrai">
+                    <button id="muiChuyenTrai"><i class="fa-solid fa-arrow-left"></i></button>
+                </div>
+                <div id="khamPhas">
+                    <div id="khamPha">
+                        <div class="cardKhampha">
+                            <img class="hinhDaiDienKPT" src="./img/khamPhaTruong/lopHoc_1.jpg" alt="logo"/>
+                            <div class="tenKhamPha">Lớp học</div>
+                            <div class="ghiChuKP">
+                                Xem thêm<i class="fa-regular fa-image"></i>
+                            </div>
+                        </div>
+                        <div class="cardKhampha">
+                            <img class="hinhDaiDienKPT" src="./img/khamPhaTruong/thuVien_1.jpg" alt="logo"/>
+                            <div class="tenKhamPha">Thư viện</div>
+                            <div class="ghiChuKP">
+                                Xem thêm<i class="fa-regular fa-image"></i>
+                            </div>
+                        </div>
+                        <div class="cardKhampha">
+                            <img class="hinhDaiDienKPT" src="./img/khamPhaTruong/kTX_1.jpg" alt="logo"/>
+                            <div class="tenKhamPha">Kí túc xá</div>
+                            <div class="ghiChuKP">
+                                Xem thêm<i class="fa-regular fa-image"></i>
+                            </div>
+                        </div>
+                        <div class="cardKhampha">
+                            <img class="hinhDaiDienKPT" src="./img/khamPhaTruong/canTeen_1.jpg" alt="logo"/>
+                            <div class="tenKhamPha">Canteen</div>
+                            <div class="ghiChuKP">
+                                Xem thêm<i class="fa-regular fa-image"></i>
+                            </div>
+                        </div>
+                        <div class="cardKhampha">
+                            <img class="hinhDaiDienKPT" src="./img/khamPhaTruong/KhuVucTraoDoiHocTap_1.jpg" alt="logo"/>
+                            <div class="tenKhamPha">Khu vực trao đổi học tập</div>
+                            <div class="ghiChuKP">
+                                Xem thêm<i class="fa-regular fa-image"></i>
+                            </div>
+                        </div>
+                        <div class="cardKhampha">
+                            <img class="hinhDaiDienKPT" src="./img/khamPhaTruong/sanTap_1.jpg" alt="logo"/>
+                            <div class="tenKhamPha">Khu thể thao</div>
+                            <div class="ghiChuKP">
+                                Xem thêm<i class="fa-regular fa-image"></i>
+                            </div>
+                        </div>
+                        <div class="cardKhampha">
+                            <img class="hinhDaiDienKPT" src="./img/khamPhaTruong/hoiTruong_1.jpg" alt="logo"/>
+                            <div class="tenKhamPha">Hội trường</div>
+                            <div class="ghiChuKP">
+                                Xem thêm<i class="fa-regular fa-image"></i>
+                            </div>
+                        </div>
+                        <div class="cardKhampha">
+                            <img class="hinhDaiDienKPT" src="./img/khamPhaTruong/giangDuong_1.jpg" alt="logo"/>
+                            <div class="tenKhamPha">Giảng đường</div>
+                            <div class="ghiChuKP">
+                                Xem thêm<i class="fa-regular fa-image"></i>
+                            </div>
+                        </div>
+                        <div class="cardKhampha">
+                            <img class="hinhDaiDienKPT" src="./img/khamPhaTruong/hoBoi_1.jpg" alt="logo"/>
+                            <div class="tenKhamPha">Hồ bơi</div>
+                            <div class="ghiChuKP">
+                                Xem thêm<i class="fa-regular fa-image"></i>
+                            </div>
+                        </div>
+                        <div class="cardKhampha">
+                            <img class="hinhDaiDienKPT" src="./img/khamPhaTruong/phongCheTao_1.jpg" alt="logo"/>
+                            <div class="tenKhamPha">Phòng chế tạo</div>
+                            <div class="ghiChuKP">
+                                Xem thêm<i class="fa-regular fa-image"></i>
+                            </div>
+                        </div>
+                        <div class="cardKhampha">
+                            <img class="hinhDaiDienKPT" src="./img/khamPhaTruong/phongMayTinh_1.jpg" alt="logo"/>
+                            <div class="tenKhamPha">Phòng thực hành</div>
+                            <div class="ghiChuKP">
+                                Xem thêm<i class="fa-regular fa-image"></i>
+                            </div>
+                        </div>
+                        <div class="cardKhampha">
+                            <img class="hinhDaiDienKPT" src="./img/khamPhaTruong/phongBanKhac.jpg" alt="logo"/>
+                            <div class="tenKhamPha">Phòng ban học sinh</div>
+                            <div class="ghiChuKP"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chuyenKPTPhai">
+                    <button id="muiChuyenPhai"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </section>
    </main>
 
+   
+<!-- Footer -->
+   <footer>
+    <section class="footer">
+        <div class="phanDau flex">
+            <div id="logoTruongFooter">
+                <a href="https://thao225.github.io/SAT_TrangChu/"> <img src="./img/logo/logoTruong.png" alt="" id="truongFooter"></a>
+            </div>
+            <div class="iconLienHe">
+                <ul>
+                    <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
+                    <li><a href=""><i class="fab fa-facebook-messenger"></i></a></li>
+                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram-square"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="phanGiua flex">
+            <div class="noidungFooters">
+                <div class="tieuDeNDF">
+                    Thông tin liên hệ
+                </div>
+                <nav class="thongTinNDFs">
+                    <ul class="thongtinNDF">
+                        <li class="noiDungFooter">
+                            <div class="tenNoiDungFooters flex">
+                                <i class="fas fa-phone-square-alt"></i>
+                                <div class="tenNoiDungFooter">Số điện thoại</div>
+                            </div>
+                            <div class="noiDungNhoFooter">01111111111</div>
+                        </li>
+                        <li class="noiDungFooter">
+                            <div class="tenNoiDungFooters flex">
+                                <i class="fas fa-envelope"></i>
+                                <div class="tenNoiDungFooter">Email</div>
+                            </div>
+                            <div class="noiDungNhoFooter">
+                                <a href="mailto:tuyensinhsat@sat.edu.vn?">tuyensinh@sat.edu.vn</a>
+                            </div>
+                        </li>
+                        <li class="noiDungFooter">
+                            <div class="tenNoiDungFooters flex">
+                                <i class="fab fa-facebook"></i>
+                                <div class="tenNoiDungFooter">Fagepage Tuyển sinh</div>
+                            </div>
+                            <div class="noiDungNhoFooter">
+                                <a  href="https://www.facebook.com/tuyensinhsat/">https://www.facebook.com/tuyensinhsat/</a>
+                            </div>
+                        </li>
+                        <li class="noiDungFooter">
+                            <div class="tenNoiDungFooters flex">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="tenNoiDungFooter">Địa chỉ</div>
+                            </div>
+                            <div class="noiDungNhoFooter">Cơ sở chính - Quận 1, TP.HCM</div>
+                        </li>
+                        <li class="noiDungFooter">
+                            <div class="tenNoiDungFooters flex">
+                                <i class="fas fa-clock"></i>
+                                <div class="tenNoiDungFooter">Thời gian làm việc</div>
+                            </div>
+                            <div class="noiDungNhoFooter">Thứ 2 đến thứ 6 (8h đến 17h)</div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="noidungFooters">
+                <div class="tieuDeNDF">
+                    Cơ Sở Học tập
+                </div>
+                <nav class="thongTinNDFs">
+                    <ul class="thongtinNDF">
+                        <li class="noiDungFooter">
+                            <div class="tenNoiDungFooters flex">
+                                <i class="fas fa-school"></i>
+                                <div class="tenNoiDungFooter">Cơ sở 1</div>
+                            </div>
+                            <div class="noiDungNhoFooter">Thành phố Hồ Chí Minh</div>
+                        </li>
+                        <li class="noiDungFooter">
+                            <div class="tenNoiDungFooters flex">
+                                <i class="fas fa-school"></i>
+                                <div class="tenNoiDungFooter">Cơ sở 2</div>
+                            </div>
+                            <div class="noiDungNhoFooter">Thành phố Huế</div>
+                        </li>
+                        <li class="noiDungFooter">
+                            <div class="tenNoiDungFooters flex">
+                                <i class="fas fa-school"></i>
+                                <div class="tenNoiDungFooter">Cơ sở 3</div>
+                            </div>
+                            <div class="noiDungNhoFooter">Thành phố Hà Nội</div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="noidungFooters">
+                <div class="tieuDeNDF">
+                    Về chúng tôi
+                </div>
+                <nav class="thongTinNDFs">
+                    <ul class="thongtinNDF veChungToi">
+                        <li><a href="https://thao225.github.io/SAT_TrangChu/"><i class="fa-solid fa-house"></i>Trang chủ</a></li>
+                        <li><a href="#"><i class="fas fa-info-circle"></i>Thông tin</a></li>
+                        <li><a href="#"><i class="fa-solid fa-star"></i>Giới thiệu</a></li>
+                        <li><a href="#"><i class="fa-solid fa-newspaper"></i>Tin tức</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="phanCuoi">
+            <span>Copyright &copy 2024 Đại Học Vũ Trụ Và Công Nghệ</span>
+        </div>
+    </section>
+   </footer>
+<!-- Xem thêm Khám Phá Trường -->
+    <div class="xemThems">
+        <div class="xemThemkhamPhas">
+            <div class="xemThemkhamPha">
+                <div class="tinhTrangXemThem"><button>&times;</button></div>
+                <div class="noiDungXemPhim">
+                    <div class="anhChinh">
+                        <img src="./img/khamPhaTruong/lopHoc_1.jpg" alt="">
+                    </div>
+                    <nav class="anhNhoKhamPhas">
+                        <ul class="anhNhoKhamPha">
+                            <li><img src="./img/khamPhaTruong/lopHoc_2.jpg" alt=""></li>
+                            <li><img src="./img/khamPhaTruong/lopHoc_3.png" alt=""></li>
+                            <li><img src="./img/khamPhaTruong/lopHoc_4.jpg" alt=""></li>
+                            <li><img src="./img/khamPhaTruong/lopHoc_4.jpg" alt=""></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="xemThemkhamPhas">
+            <div class="xemThemkhamPha">
+                <div class="tinhTrangXemThem"><button>&times;</button></div>
+                <div class="noiDungXemPhim">
+                    <div class="anhChinh">
+                        <img src="./img/khamPhaTruong/thuVien_1.jpg" alt="">
+                    </div>
+                    <nav class="anhNhoKhamPhas">
+                        <ul class="anhNhoKhamPha">
+                            <li><img src="./img/khamPhaTruong/thuVien_2.jpg" alt=""></li>
+                            <li><img src="./img/khamPhaTruong/thuVien_3.jpg" alt=""></li>
+                            <li><img src="./img/khamPhaTruong/thuVien_4.jpg" alt=""></li>
+                            <li><img src="./img/khamPhaTruong/thuVien_5.jpg" alt=""></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="xemThemkhamPhas">
+            <div class="xemThemkhamPha">
+                <div class="tinhTrangXemThem"><button>&times;</button></div>
+                <div class="noiDungXemPhim">
+                    <div class="anhChinh">
+                        <img src="./img/khamPhaTruong/kTX_1.jpg" alt="">
+                    </div>
+                    <nav class="anhNhoKhamPhas">
+                        <ul class="anhNhoKhamPha">
+                            <li><img src="./img/khamPhaTruong/kTX_1.jpg" alt=""></li>
+                            <li><img src="./img/khamPhaTruong/kTX_2.jpg" alt=""></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="xemThemkhamPhas">
+            <div class="xemThemkhamPha">
+                <div class="tinhTrangXemThem"><button>&times;</button></div>
+                <div class="noiDungXemPhim">
+                    <div class="anhChinh">
+                        <img src="./img/khamPhaTruong/canTeen_1.jpg" alt="">
+                    </div>
+                    <nav class="anhNhoKhamPhas">
+                        <ul class="anhNhoKhamPha">
+                            <li><img src="./img/khamPhaTruong/canTeen_1.jpg" alt=""></li>
+                            <li><img src="./img/khamPhaTruong/canTeen_2.jpg" alt=""></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="xemThemkhamPhas">
+            <div class="xemThemkhamPha">
+                <div class="tinhTrangXemThem"><button>&times;</button></div>
+                <div class="noiDungXemPhim">
+                    <div class="anhChinh">
+                        <img src="./img/khamPhaTruong/KhuVucTraoDoiHocTap_1.jpg" alt="">
+                    </div>
+                    <nav class="anhNhoKhamPhas">
+                        <ul class="anhNhoKhamPha">
+                            <li><img src="./img/khamPhaTruong/KhuVucTraoDoiHocTap_1.jpg" alt=""></li>
+                            <li><img src="./img/khamPhaTruong/KhuVucTraoDoiHocTap_2.png" alt=""></li>
+                            <li><img src="./img/khamPhaTruong/KhuVucTraoDoiHocTap_3.jpg" alt=""></li>
+                            <li><img src="./img/khamPhaTruong/khuVucTraoDoiHocTap_4.jpg" alt=""></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="xemThemkhamPhas">
+            <div class="xemThemkhamPha">
+                <div class="tinhTrangXemThem"><button>&times;</button></div>
+                <div class="noiDungXemPhim">
+                    <div class="anhChinh">
+                        <img src="./img/khamPhaTruong/sanTap_1.jpg" alt="">
+                    </div>
+                    <nav class="anhNhoKhamPhas">
+                        <ul class="anhNhoKhamPha">
+                            <li><img src="./img/khamPhaTruong/sanTap_1.jpg" alt=""></li>
+                            <li><img src="./img/khamPhaTruong/sanTap_2.jpg" alt=""></li>
+                            <li><img src="./img/khamPhaTruong/sanTap_3.jpg" alt=""></li>
+                            <li><img src="./img/khamPhaTruong/sanTap_4.jpg" alt=""></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="xemThemkhamPhas">
+            <div class="xemThemkhamPha">
+                <div class="tinhTrangXemThem"><button>&times;</button></div>
+                <div class="noiDungXemPhim">
+                    <div class="anhChinh">
+                        <img src="./img/khamPhaTruong/hoiTruong_1.jpg" alt="">
+                    </div>
+                    <nav class="anhNhoKhamPhas">
+                        <ul class="anhNhoKhamPha">
+                            <li><img src="./img/khamPhaTruong/hoiTruong_1.jpg" alt=""></li>
+                            <li><img src="./img/khamPhaTruong/hoiTruong_2.jpg" alt=""></li>
+                            <li><img src="./img/khamPhaTruong/hoiTruong_3.jpg" alt=""></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="xemThemkhamPhas">
+            <div class="xemThemkhamPha">
+                <div class="tinhTrangXemThem"><button>&times;</button></div>
+                <div class="noiDungXemPhim">
+                    <div class="anhChinh">
+                        <img src="./img/khamPhaTruong/giangDuong_1.jpg" alt="">
+                    </div>
+                    <nav class="anhNhoKhamPhas">
+                        <ul class="anhNhoKhamPha">
+                            <li><img src="./img/khamPhaTruong/giangDuong_1.jpg" alt=""></li>
+                            <li><img src="./img/khamPhaTruong/giangDuong_2.jpg" alt=""></li>
+                            <li><img src="./img/khamPhaTruong/giangDuong_3.jpg" alt=""></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="xemThemkhamPhas">
+            <div class="xemThemkhamPha">
+                <div class="tinhTrangXemThem"><button>&times;</button></div>
+                <div class="noiDungXemPhim">
+                    <div class="anhChinh">
+                        <img src="./img/khamPhaTruong/hoBoi_1.jpg" alt="">
+                    </div>
+                    <nav class="anhNhoKhamPhas">
+                        <ul class="anhNhoKhamPha">
+                            <li><img src="./img/khamPhaTruong/hoBoi_1.jpg" alt=""></li>
+                            <li><img src="./img/khamPhaTruong/hoBoi_2.jpg" alt=""></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="xemThemkhamPhas">
+            <div class="xemThemkhamPha">
+                <div class="tinhTrangXemThem"><button>&times;</button></div>
+                <div class="noiDungXemPhim">
+                    <div class="anhChinh">
+                        <img src="./img/khamPhaTruong/phongCheTao_1.jpg" alt="">
+                    </div>
+                    <nav class="anhNhoKhamPhas">
+                        <ul class="anhNhoKhamPha">
+                            <li><img src="./img/khamPhaTruong/phongCheTao_1.jpg" alt=""></li>
+                            <li><img src="./img/khamPhaTruong/phongCheTao_2.jpg" alt=""></li>
+                            <li><img src="./img/khamPhaTruong/phongCheTao_3.jpg" alt=""></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="xemThemkhamPhas">
+            <div class="xemThemkhamPha">
+                <div class="tinhTrangXemThem"><button>&times;</button></div>
+                <div class="noiDungXemPhim">
+                    <div class="anhChinh">
+                        <img src="./img/khamPhaTruong/phongMayTinh_1.jpg" alt="">
+                    </div>
+                    <nav class="anhNhoKhamPhas">
+                        <ul class="anhNhoKhamPha">
+                            <li><img src="./img/khamPhaTruong/phongMayTinh_1.jpg" alt=""></li>
+                            <li><img src="./img/khamPhaTruong/phongMayTinh_2.jpg" alt=""></li>
+                            <li><img src="./img/khamPhaTruong/phongMayTinh_3.jpg" alt=""></li>
+                            <li><img src="./img/khamPhaTruong/phongMayTinh_4.jpg" alt=""></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
-
-
-<!-- <div class="haha">
-    <div class="night">
-     <div class="hehe">
-         <div class="truoc"></div>
-         <div class="shooting_star"></div>
-         <div class="sau"></div>
-     </div>
-     <div class="hehe">
-         <div class="truoc"></div>
-         <div class="shooting_star"></div>
-         <div class="sau"></div>
-     </div>
-     <div class="hehe">
-         <div class="truoc"></div>
-         <div class="shooting_star"></div>
-         <div class="sau"></div>
-     </div>
-     <div class="hehe">
-         <div class="truoc"></div>
-         <div class="shooting_star"></div>
-         <div class="sau"></div>
-     </div>
-     <div class="hehe">
-         <div class="truoc"></div>
-         <div class="shooting_star"></div>
-         <div class="sau"></div>
-     </div>
-    </div>
- </div> -->
