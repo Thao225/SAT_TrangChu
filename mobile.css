@@ -1,0 +1,108 @@
+@media screen and (max-width: 1024px){
+    /* .cardQuyChe{
+        width: calc(33.3vw-20px); 
+    } */
+    .logoTruongs{
+        padding-top: 1rem;
+        padding-right: 3rem;
+    }
+    .mucLucs>li>a{
+        text-align: center;
+    }
+    .quyTrinh {
+        height: 300px;
+    }
+    .cardQuyChe>div{
+        height: 450px;
+    }
+    .cacBuocDangKis{
+        height: 470px;
+    }
+    .soDoKhoas{
+        height: 500px;
+    }
+    .cardKhampha {
+        width: 30%;
+    }
+    .tenKhamPha{
+        font-size: 10px;
+    }
+    #khamPha {
+        width: 500%;
+    }
+    .chuyenKPTTrai{
+        left: 0;
+    }
+    .xemThemkhamPha{
+        width: 70%;
+        height: 65%;
+    }
+    .anhNhoKhamPhas{
+        width: 20%;
+        margin: auto 0;
+        margin-right: 60px;
+    }
+    .anhChinh{
+        width: 50%;
+        margin: auto auto;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    .quyTrinh {
+        height: 450px;
+    }
+    .cardQuyChe{
+        width: 50%;
+        padding-right: 10px;
+        box-sizing: border-box;
+ 
+    }
+    .cardQuyChe:last-child{
+        padding-right: 0px;
+        box-sizing: border-box;
+    }
+    #quyChe{
+        display: flex;
+        width: 400%;
+    }
+    .cardQuyChe>div{
+        height: 400px;
+    }
+    .cacBuocDangKis{
+        height: 550px;
+    }
+    .dangKi{
+        margin-top: 1rem;
+    }
+    .tenKhamPha{
+        font-size: 16px;
+    }
+
+    video {
+        margin-top: 0rem;
+    }
+    #container {
+        height: 500px;
+    }
+    .noiDungs {
+        padding-top: 0;
+    }
+    .xemThemkhamPha{
+        width: 80%;
+        height: 55%;
+    }
+    .anhNhoKhamPhas{
+        width: 30%;
+        height: 100%;
+        margin: auto 0;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 430px){
+    #container{
+        height: 200px;
+    }
+}

@@ -11,18 +11,13 @@ window.onload=function(){
   )
   wow.init();
 
+let mouse=document.querySelectorAll("a")
+mouse.onmouseenter=function () {
+    this.style.cursor="pointer"
+}
+
 let dangKis=document.querySelectorAll(".noiDungBuocDKs")
 let chons=document.querySelectorAll(".buocDangKis li")
-// for(let c of chons)
-//   c.onclick=function(){
-//     for (let index = 0; index < chons.length; index++) {
-//       if (this == chons[index]) {
-//         // hinhNhan.style=this.style; 
-//         // hinhNhan.style.display = `block`;
-//         dangKis[index].style.display = 'block'
-//       }
-//     }
-//   }
 
 function lapLai(){
   chons.forEach(li => {
@@ -49,38 +44,127 @@ for (let i = 0; i < chons.length; i++){
     count = i
   }
 }
+
+let shortNames=document.querySelectorAll(".shortName")
+let longNames=document.querySelectorAll(".longName")
+let tenKhoas=document.querySelectorAll(".tenKhoa")
+let Khoas=document.querySelectorAll(".khoas")
+for (let i = 0; i < Khoas.length; i++){
+  tenKhoas[i].innerHTML=shortNames[i].innerHTML
+  Khoas[i].onmouseenter=function() {
+    tenKhoas[i].innerHTML=longNames[i].innerHTML
+  }
+  Khoas[i].onmouseleave=function() {
+    tenKhoas[i].innerHTML=shortNames[i].innerHTML
+  }
 }
 
-// sau 5 giây thì dừng lại
-// setTimeout(() => {
-//   clearInterval(timerId);
-// }, 5000);
+let coSos=document.querySelectorAll(".gioiThieuKhoas")
+let nutChuyens=document.querySelectorAll(".nutChuyen")
+const gtKhoa=document.getElementById("gioiThieuKhoa")
+for (let i = 0; i < nutChuyens.length; i++){
+  nutChuyens[i].onclick=function() {
+    if (i===0) {
+      gtKhoa.style.marginLeft="0"
+    }
+    else if (i===1) {
+      gtKhoa.style.marginLeft="-100.2%"
+    }
+    else {
+      gtKhoa.style.marginLeft="-200.4%"
+    }
+  }
+}
 
-// video
-// var video = document.querySelector("video"),
-// container = document.querySelector("#container");
 
-// var setVideoDimensions = function() {
-// var w = video.videoWidth;
-// var videoRatio = (w / h).toFixed(2);
+// Quy che
+const phai=document.getElementById("muiChuyenPhai")
+const trai=document.getElementById("muiChuyenTrai")
+let chieuDaiQuyChes=document.getElementById("quyChes")
+let chieuDaiQuyChe=document.getElementById("quyChe")
+const cardQuyChe=document.querySelector(".cardQuyChe").offsetWidth
+let cardQuyChes=document.querySelectorAll(".cardQuyChe")
 
-// var containerStyles = window.getComputedStyle(container),
-//   minW = parseInt(containerStyles.getPropertyValue("width")),
-//   minH = parseInt(containerStyles.getPropertyValue("height"));
-// var widthRatio = minW / w,
-//   heightRatio = minH / h;
-// let newWidth = 0;
-// let newHeight = 0;
-// if (widthRatio > heightRatio) {
-//   newWidth = minW;
-//   newHeight = Math.ceil(newWidth / videoRatio);
-// } else {
-//   newHeight = minH;
-//   newWidth = Math.ceil(newHeight * videoRatio);
-// }
+trai.onmouseenter=function(){
+  this.style.cursor="pointer"
+}
+phai.onmouseenter=function(){
+  this.style.cursor="pointer"
+}
 
-// video.style.width = newWidth + "px";
-// video.style.height = newHeight + "px";
-// };
-// video.addEventListener("loadedmetadata", setVideoDimensions, false);
-// window.addEventListener("resize", setVideoDimensions, false);
+function lapLaiQuyChe(){
+  chieuDaiQuyChes.scrollLeft+=cardQuyChe
+  countQuyChe++
+  if (countQuyChe>=6) {
+    countQuyChe=0
+    chieuDaiQuyChes.scrollLeft=0
+  }
+}
+let countQuyChe = 0;
+let timerIdQuyChe = setInterval(lapLaiQuyChe, 7000);
+phai.onclick=function(){
+    chieuDaiQuyChes.scrollLeft+=cardQuyChe
+}
+trai.onclick=function(){
+    chieuDaiQuyChes.scrollLeft-=cardQuyChe
+}
+
+
+//Khám phá Trường
+const phaiKP=document.querySelector(".chuyenKPTPhai>button")
+const traiKP=document.querySelector(".chuyenKPTTrai>button")
+let chieuDaiKPs=document.getElementById("khamPhas")
+let chieuDaiKP=document.getElementById("khamPha")
+const cardKhamPha=document.querySelector(".cardKhampha").offsetWidth
+let cardKhamPhas=document.querySelectorAll(".cardKhampha")
+
+traiKP.onmouseenter=function(){
+  this.style.cursor="pointer"
+}
+phaiKP.onmouseenter=function(){
+  this.style.cursor="pointer"
+}
+
+function lapLaiKhamPha(){
+  chieuDaiKPs.scrollLeft+=cardKhamPha
+  countKhamPha++
+  if (countKhamPha>=9) {
+    countKhamPha=0
+    chieuDaiKPs.scrollLeft=0
+  }
+}
+let countKhamPha = 0;
+let timerIdKhamPha = setInterval(lapLaiKhamPha, 5000);
+phaiKP.onclick=function(){
+    chieuDaiKPs.scrollLeft+=cardKhamPha
+}
+traiKP.onclick=function(){
+    chieuDaiKPs.scrollLeft-=cardKhamPha
+}
+
+
+// Xem thêm Khám phá Trường
+let xemThems=document.querySelectorAll(".xemThemkhamPhas")
+let ghiChuKPs=document.querySelectorAll(".ghiChuKP i")
+for (let i = 0; i < ghiChuKPs.length; i++) {
+  ghiChuKPs[i].onmouseenter=function(){
+    this.style.cursor="pointer"
+  }
+  ghiChuKPs[i].onclick=function(){
+    xemThems[i].style.display="flex"
+    const tinhTrangXT=xemThems[i].querySelector(".tinhTrangXemThem")
+    let hinhChinhs=xemThems[i].querySelector(".anhChinh>img")
+    let hinhPhus =xemThems[i].querySelectorAll(".anhNhoKhamPhas img")
+    tinhTrangXT.onclick=function(){
+      xemThems[i].style.display="none"
+    }
+    for (let j = 0; j < hinhPhus.length; j++) {
+      hinhPhus[j].onclick=function(){
+        hinhChinhs.src=this.src
+      }
+    }
+  }
+}
+
+
+}
