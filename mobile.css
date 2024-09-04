@@ -103,7 +103,7 @@
 
 @media screen and (max-width: 430px){
     body{
-        width: 430px !important;
+        margin: auto auto;
     }
     #container{
         height: 400px;
