@@ -116,7 +116,7 @@ footer a{
     width: 90%;
 }
 .iconLienHe{
-    /* width: 50%; */
+
     margin-left: auto;
 }
 .iconLienHe>ul{
@@ -226,7 +226,7 @@ footer a{
         text-align: left;
         padding: 1rem;
         padding-right: 3rem;
-        /* border-bottom : 1px solid lightgray; */
+
         margin: 0;
     }
     #menuRutGon {
@@ -280,7 +280,7 @@ footer a{
         text-align: left;
         padding: 1rem;
         margin-right: 2rem;
-        /* border-bottom : 1px solid lightgray; */
+
     }
     #closeMenu {
         text-align: left;

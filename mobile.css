@@ -49,9 +49,7 @@
 }
 
 @media screen and (max-width: 768px){
-    /* .cardQuyChe{
-        width: calc(50vw-20px);
-    } */
+
     .quyTrinh {
         height: 450px;
     }
@@ -59,8 +57,7 @@
         width: 50%;
         padding-right: 10px;
         box-sizing: border-box;
-        /* margin: 10px; */
-        /* scroll-snap-align: start; */
+ 
     }
     .cardQuyChe:last-child{
         padding-right: 0px;
@@ -105,9 +102,6 @@
 }
 
 @media screen and (max-width: 430px){
-    /* .cardQuyChe{
-        width: calc(50vw-20px);
-    } */
     #container{
         height: 200px;
     }

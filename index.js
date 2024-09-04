@@ -62,8 +62,6 @@ for (let i = 0; i < Khoas.length; i++){
 let coSos=document.querySelectorAll(".gioiThieuKhoas")
 let nutChuyens=document.querySelectorAll(".nutChuyen")
 const gtKhoa=document.getElementById("gioiThieuKhoa")
-// const nutTrai=document.getElementById("muiTenTrai")
-// let nutPhai=document.getElementById("muiTenPhai")
 for (let i = 0; i < nutChuyens.length; i++){
   nutChuyens[i].onclick=function() {
     if (i===0) {
@@ -96,10 +94,6 @@ phai.onmouseenter=function(){
 
 function lapLaiQuyChe(){
   chieuDaiQuyChes.scrollLeft+=cardQuyChe
-  // chieuDaiQuyChe.innerHTML=chieuDaiQuyChe.innerHTML+cardQuyChes[countQuyChe].outerHTML
-  // let cardQuyChes=document.querySelectorAll("#quyChe>div")
-  // cardQuyChes[cardQuyChes.length-1].style.display="none"
-  // chieuDaiQuyChe.style.width+=cardQuyChe
   countQuyChe++
   if (countQuyChe>=6) {
     countQuyChe=0
@@ -174,42 +168,3 @@ for (let i = 0; i < ghiChuKPs.length; i++) {
 
 
 }
-
-
-
-  
-
-
-// sau 5 giây thì dừng lại
-// setTimeout(() => {
-//   clearInterval(timerId);
-// }, 5000);
-
-// video
-// var video = document.querySelector("video"),
-// container = document.querySelector("#container");
-
-// var setVideoDimensions = function() {
-// var w = video.videoWidth;
-// var videoRatio = (w / h).toFixed(2);
-
-// var containerStyles = window.getComputedStyle(container),
-//   minW = parseInt(containerStyles.getPropertyValue("width")),
-//   minH = parseInt(containerStyles.getPropertyValue("height"));
-// var widthRatio = minW / w,
-//   heightRatio = minH / h;
-// let newWidth = 0;
-// let newHeight = 0;
-// if (widthRatio > heightRatio) {
-//   newWidth = minW;
-//   newHeight = Math.ceil(newWidth / videoRatio);
-// } else {
-//   newHeight = minH;
-//   newWidth = Math.ceil(newHeight * videoRatio);
-// }
-
-// video.style.width = newWidth + "px";
-// video.style.height = newHeight + "px";
-// };
-// video.addEventListener("loadedmetadata", setVideoDimensions, false);
-// window.addEventListener("resize", setVideoDimensions, false);
