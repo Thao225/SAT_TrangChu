@@ -102,6 +102,9 @@
 }
 
 @media screen and (max-width: 430px){
+    body{
+        width: 430px !important;
+    }
     #container{
         height: 400px;
         width: 100%;
