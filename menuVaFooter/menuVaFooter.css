@@ -308,6 +308,15 @@ footer a{
     div.logoTruongs{
         padding-left: 1rem;
     }
+    .phanGiua{
+        display: block;
+    }
+    .noidungFooters{
+        width: 100% !important;
+    }
+    .phanCuoi>span{
+        font-size: 15px;
+    }
 }
 
 
