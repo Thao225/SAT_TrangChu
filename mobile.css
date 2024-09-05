@@ -163,11 +163,11 @@
     .tenKhamPha{
         font-size: 10px;
     }
-}
-.wapper{
-    display:block;
-}
-.wapper > div {
-    width : 80%;
-    margin: 2% auto;
+    .wapper{
+        display:block;
+    }
+    .wapper > div {
+        width : 80%;
+        margin: 2% auto;
+    }
 }
