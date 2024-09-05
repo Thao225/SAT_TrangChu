@@ -106,8 +106,13 @@
         height: 400px;
         width: 100%;
     }
+    #hinhVeDau{
+        width: 100px;
+    }
     #veDau{
-        display: none;
+        width: 20%;
+        /* height: 300px; */
+        margin-right: 3rem;
     }
     .quyTrinhNopHoSo{
         margin-top: 0;
