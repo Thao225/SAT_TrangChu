@@ -10,6 +10,13 @@ window.onload=function(){
   }
   )
   wow.init();
+  let goTop =document.getElementById("hinhVeDau")
+    goTop.onclick = function() {
+        //cuộn trang đến một phần tử cụ thể mượt hơn
+        document.documentElement.scrollIntoView({ 
+            behavior: 'smooth' 
+        });
+    }
 // Menu with 768
 let btn=document.querySelector("#menuRutGon>i")
 let thanhMenu = document.querySelector("nav.mucLucs")
