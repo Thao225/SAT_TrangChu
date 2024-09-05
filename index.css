@@ -681,3 +681,25 @@ button{
     flex: 1;
     margin-left: 1rem;
 }
+
+
+.wapper > div {
+    color : #31294C;
+    width : 30%;
+    padding : 2% ;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.wapper{
+    display: flex;
+    text-align: center;
+}
+.khoaYY{
+    background-color: white;
+    width: 100%;
+}
+.tenKhoaYY{
+    font-size: 40px;
+}
